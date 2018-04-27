@@ -1,0 +1,33 @@
+.title {
+    text-align: center;
+}
+
+.race-generator {
+    margin: auto; 
+    margin-bottom: 1em;
+    display: block;
+}
+
+.class-generator {
+    margin: auto; 
+    margin-bottom: 1em;
+    display: block;
+}
+
+.background-generator {
+    margin: auto; 
+    margin-bottom: 1em;
+    display: block;
+}
+
+.character-refresh {
+    margin: auto; 
+    margin-bottom: 1em;
+    display: block;
+}
+
+.row {
+    margin: auto; 
+    display: block;
+    text-align: center
+}

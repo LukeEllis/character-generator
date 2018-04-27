@@ -2,40 +2,45 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
-        <link href="./css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
         <link rel="icon" href="favicon.png" type="image/x-icon">
         <title>Random Character Generator</title>
     </head>
     <body>
         <generator class="character-generator-container">
             <div class="title-container">
-                <h1 class="title">Random Character Generator</h1>
+                <h2 class="title page-footer blue-grey darken-1">Random Character Generator</h2>
             </div>
             <div class="race-generator-container">
-                <button class="race-generator">Generate Race</button>
+                <button class="race-generator waves-effect waves-light btn">Generate Race</button>
             </div>
             <div class="class-generator-container">
-                <button class="class-generator">Generate Class</button>
+                <button class="class-generator waves-effect waves-light btn">Generate Class</button>
             </div>
             <div class="background-generator-container">
-                <button class="background-generator">Generate Background</button>
+                <button class="background-generator waves-effect waves-light btn">Generate Background</button>
             </div>
         </generator>
         <refresh>
             <div class="character-refresh-container">
-                <button class="character-refresh">Generate New Character</button>
+                <button class="character-refresh waves-effect waves-light btn">Generate New Character</button>
             </div>
         </refresh>
-        <generated class="generated-character-container">
-            <div class="generated-character-race"></div>
-            <div class="generated-character-class"></div>
-            <div class="generated-character-background"></div>
+        <generated class="generated-character-container row">
+            <!-- <div class="col s12 m6"> -->
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="generated-character-race card-title"></span>
+                        <span class="generated-character-class card-title"></span>
+                        <span class="generated-character-background card-title"></span>
+                    </div>
+                </div>
+            <!-- </div> -->
         </generated>
-
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-        <script src="./js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

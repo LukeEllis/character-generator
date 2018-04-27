@@ -120,17 +120,17 @@ var randomBackground = Math.floor(Math.random()*backgrounds.length);
 
 $(".race-generator").click(function(){
     $(".generated-character-race").empty();
-    $(".generated-character-race").append(`<h2>You are a ${races[randomRace]}.</h2>`);
+    $(".generated-character-race").append(`<h4>Your race is ${races[randomRace]}</h4>`);
 });
 
 $(".class-generator").click(function(){
     $(".generated-character-class").empty();
-    $(".generated-character-class").append(`<h2>You are a ${classes[randomClass]}.</h2>`);
+    $(".generated-character-class").append(`<h4>Your class is ${classes[randomClass]}</h4>`);
 });
 
 $(".background-generator").click(function(){
     $(".generated-character-background").empty();
-    $(".generated-character-background").append(`<h2>You are a ${backgrounds[randomBackground]}.</h2>`);
+    $(".generated-character-background").append(`<h4>Your background is ${backgrounds[randomBackground]}</h4>`);
 });
 
 $(".character-refresh").click(function(){
