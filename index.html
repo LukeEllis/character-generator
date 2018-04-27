@@ -8,7 +8,7 @@
         <title>Random Character Generator</title>
     </head>
     <body>
-        <main class="character-generator-container">
+        <generator class="character-generator-container">
             <div class="title-container">
                 <h1 class="title">Random Character Generator</h1>
             </div>
@@ -21,17 +21,18 @@
             <div class="background-generator-container">
                 <button class="background-generator">Generate Background</button>
             </div>
-        </main>
-        <aside class="generated-character-container">
+        </generator>
+        <refresh>
+            <div class="character-refresh-container">
+                <button class="character-refresh">Generate New Character</button>
+            </div>
+        </refresh>
+        <generated class="generated-character-container">
             <div class="generated-character-race"></div>
             <div class="generated-character-class"></div>
             <div class="generated-character-background"></div>
-        </aside>
-        <redirect>
-            <div class="redirect-container">
-                <button class="redirect">Generate New Character</button>
-            </div>
-        </redirect>
+        </generated>
+
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
         <script src="./js/main.js"></script>
