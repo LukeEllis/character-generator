@@ -119,16 +119,20 @@ var randomClass = Math.floor(Math.random()*classes.length);
 var randomBackground = Math.floor(Math.random()*backgrounds.length);
 
 $(".race-generator").click(function(){
-    $(".generated-character-race").empty();
+    $(".generated-character-race h2").empty();
     $(".generated-character-race").append(`<h2>You are a ${races[randomRace]}.</h2>`);
 });
 
 $(".class-generator").click(function(){
-    $(".generated-character-class").empty();
+    $(".generated-character-class h2").empty();
     $(".generated-character-class").append(`<h2>You are a ${classes[randomClass]}.</h2>`);
 });
 
 $(".background-generator").click(function(){
-    $(".generated-character-background").empty();
+    $(".generated-character-background h2").empty();
     $(".generated-character-background").append(`<h2>You are a ${backgrounds[randomBackground]}.</h2>`);
+});
+
+$(".redirect").click(function(){
+    $(location).attr("href", "https://lukeellis.github.io/character-generator/");
 });
